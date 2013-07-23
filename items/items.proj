@@ -1,0 +1,9 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <ItemGroup>
+        <SourceFiles Include="src\**\*.txt" />
+    </ItemGroup>
+
+    <Target Name="PrintFiles">
+        <Message Text="SourceFiles: @(SourceFiles)" />
+    </Target>
+</Project>
